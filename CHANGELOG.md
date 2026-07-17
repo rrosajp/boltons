@@ -5,6 +5,17 @@ for an average of one 33-commit release about every 9 weeks. Versions
 are named according to the [CalVer](https://calver.org) versioning
 scheme (`YY.MINOR.MICRO`).
 
+## 26.1.0
+
+_(July 17, 2026)_
+
+- Fixed [`strutils.singularize`][strutils.singularize] mangling words ending in 'ss'
+- Fixed [`fileutils.AtomicSaver`][fileutils.AtomicSaver] to accept `os.PathLike`
+- Fixed `copy.copy`/`copy.deepcopy` collapsing [`dictutils.OrderedMultiDict`][dictutils.OrderedMultiDict] values
+- Sped up [`strutils.MultiReplace`][strutils.MultiReplace] match lookup
+- Fixed [`setutils.IndexedSet`][setutils.IndexedSet] out-of-range negative indexing wrapping around
+- Fixed [`setutils.IndexedSet`][setutils.IndexedSet] slicing after removals
+
 ## 26.0.0
 
 _(June 19, 2026)_
